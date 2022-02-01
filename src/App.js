@@ -113,9 +113,9 @@ function App() {
       <DigitButton digit="8" dispatch={dispatch} /> 
       <DigitButton digit="9" dispatch={dispatch} /> 
       <OperationButton operation="-" dispatch={dispatch} />      
-      <DigitButton digit="." dispatch={dispatch} /> 
+      <DigitButton className="corner-bottom-left" digit="." dispatch={dispatch} /> 
       <DigitButton digit="0" dispatch={dispatch} /> 
-      <button className="span-two" onClick={() => dispatch({ type: ACTIONS.EVALUATE })}>=</button>
+      <button className="span-two corner-bottom-right" onClick={() => dispatch({ type: ACTIONS.EVALUATE })}>=</button>
     </div>
   );
 }
